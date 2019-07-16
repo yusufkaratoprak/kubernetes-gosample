@@ -16,6 +16,6 @@ spec:
       containers:
       - name: hello-world
         # This is the import path for the Go binary to build and run.
-        image: github.com/yusufkaratoprak/kubernetes-gosample/blob/master/
+        image: https://github.com/yusufkaratoprak/kubernetes-gosample
         ports:
         - containerPort: 8090
