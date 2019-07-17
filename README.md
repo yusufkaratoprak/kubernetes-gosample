@@ -1,4 +1,4 @@
-# h1 kubernetes-gosample 
+# kubernetes-gosample 
  this application is related to kubentes with golang sample
 
  **Description**: How can I use ko with golang sample?
