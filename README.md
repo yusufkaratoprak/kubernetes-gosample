@@ -3,7 +3,7 @@
 
  **Description**: How can I use ko with golang sample?
 
-ko is  a little unknown gem, lost in the GitHub maze.
+ko is awesome tool for creating to create container.
 
 + build Go binaries
 + containerize them and publish to a registry : I used docker hub because I have windows machine  and hate docker on windows also hyper-v demolishing virtualbox concurency. 
