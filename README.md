@@ -1,23 +1,20 @@
 # kubernetes-gosample 
- this application is related to kubentes with golang sample
+ this application is related to kubernetes with golang sample
 
- **Description**: How can I use ko with golang sample?
+ **Description**: How can I bind github project with dockerhub to create docker images includes with golang sample?
 
-ko is awesome tool for creating to create container.
+
 
 + build Go binaries
-+ containerize them and publish to a registry : I used docker hub because I have windows machine  and hate docker on windows also hyper-v demolishing virtualbox concurency. 
++ containerize them and publish to a registry : I used docker hub because I have a windows machine and hate using docker as containerized my project  on windows. also hyper-v demolishing VirtualBox concurrency. It is another handicap for my advanture of my containered world.
 + automatically update Kubernetes manifests to references the correct container image
 
 # Install
-+ You have install "ko" first.
-~~~python
-go get github.com/google/go-containerregistry/cmd/ko
-~~~
++ Actually, you only need to install minikube and kubectl for handling our pods. Because we never use any docker to create images locally. We will handle them on dockerhub by binding github and dockerhub.
 
 # Configure a Registry
 
-You have tell to KO_DOCKER_REPO about your repository's place.
+You have told to KO_DOCKER_REPO about your repository's place.
 
 ~~~python
 export KO_DOCKER_REPO=yusufkaratoprak/kubernetes-gosample
@@ -54,7 +51,7 @@ spec:
 
 #Build
 
-Then to start the build, containerization and deployment a single ko command is necessary.
+Then to start the build, containerization, and deployment a single ko command is necessary.
 
 ~~~python
 ko apply -f config/
