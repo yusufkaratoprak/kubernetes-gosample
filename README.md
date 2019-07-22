@@ -54,7 +54,7 @@ spec:
 Then to start the build, containerization, and deployment a single ko command is necessary.
 
 ~~~python
-ko apply -f config/
+kubectl apply -f config/
 ~~~
 
 # Check Pods!
